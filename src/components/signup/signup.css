@@ -1,10 +1,10 @@
-.login-form-box {
+.signup-form-box {
   max-width: 300px;
   overflow: hidden;
   border-radius: 16px;
 }
 
-.login-form {
+.signup-form {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,28 +14,24 @@
 }
 
 /*Form text*/
-.login-title {
+.signup-title {
   font-weight: bold;
   font-size: 1.6rem;
 }
 
-.login-subtitle {
+.signup-subtitle {
   font-size: 1rem;
   color: white;
 }
 
-.login-form-container {
+.signup-form-container {
   overflow: hidden;
   border-radius: 8px;
   background-color: #aeaeae;
   width: 100%;
 }
 
-.login-input:nth-last-child(1) {
-  border: 0;
-}
-
-.login-input {
+.signup-input {
   background: none;
   border: 0;
   outline: 0;
@@ -46,12 +42,15 @@
   padding: 8px 15px;
 }
 
-.login-input::placeholder {
+.signup-input:nth-last-child(1) {
+  border: 0;
+}
+
+.signup-input::placeholder {
   color: black;
 }
 
-/*Button*/
-.login-form button {
+.signup-form button {
   background-color: #0066ff;
   color: #fff;
   border: 0;
@@ -61,9 +60,8 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 47px;
 }
 
-.login-form button:hover {
+.signup-form button:hover {
   background-color: #005ce6;
 }

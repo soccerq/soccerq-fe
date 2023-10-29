@@ -1,0 +1,105 @@
+.welcome-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  height: 85%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.welcome-image {
+  width: 70%;
+  height: 100%;
+}
+
+.login-signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.login-signup-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 3.5em;
+  height: 2em;
+  align-items: center;
+  gap: 50px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+  box-shadow: 0.2em 0.2em black;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0.2em 0.2em black;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+.google-icon {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.google-login-button {
+  margin-top: 10px;
+  border: 2px solid #747474;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  gap: 5px;
+}
